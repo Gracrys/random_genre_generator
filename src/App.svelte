@@ -72,7 +72,7 @@
 <template>
 	<section id="quote-box" class="o-card">
 		<h3>Random Genre Generator</h3>
-		<dialog id="author">
+		<dialog id="quote-box">
 			{#await data}
 				<blockquote>
 					waiting..			
@@ -87,8 +87,10 @@
 			{/await}
 		</dialog>
 		<footer>
-			<button id="new-quote" on:click={() => counter >= 19 ? counter=0 : counter++  }>New quote</button>
-			<button id="tweet-quote"><a href="">&#x1F3B6;</a></button>
+			<button classs="button" id="new-quote" on:click={() => counter >= 19 ? counter=0 : counter++  }>New quote</button>
+			{#await data then genre}
+			<a href={"https://twitter.com/intent/tweet?text=check this new out genre"+genre[counter]+"by gracrys genre generator thanks to binaryjazz api"} target="_blank" id="tweet-quote" class="o-button"><button >&#x1F3B6;</button></a>
+			{/await}
 		</footer>
 	</section>
 </template>
