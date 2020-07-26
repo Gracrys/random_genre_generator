@@ -1,9 +1,9 @@
 {
-  "name": "ts-svelte",
+  "name": "Genre-Generator",
   "version": "1.0.0",
-  "description": "svelte template with parcel, scss, typescript and yarn",
+  "description": "Some random machine",
   "main": "main.js",
-  "repository": "https://github.com/Gracrys/ts-svelte.git",
+  "repository": "https://github.com/Gracrys/random_genre_generator.git",
   "author": "Gracrys <gracrys@gmail.com>",
   "license": "MIT",
   "devDependencies": {

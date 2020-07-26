@@ -1,4 +1,4 @@
-import App from './components/App.svelte';
+import App from './App.svelte';
 
 
 const app = new App({
@@ -8,9 +8,10 @@ const app = new App({
   },
 });
 
+/*
 if (module.hot) {
   module.hot.accept()
 }
-
+*/
 
 export default app
