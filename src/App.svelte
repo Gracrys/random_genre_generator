@@ -1,8 +1,7 @@
 <script lang="ts">
 	let data = (() => fetch(	"https://binaryjazz.us/wp-json/genrenator/v1/genre/20").then(x => x.json()))()
 
-	let counter = 0
-	let disabled
+	let counter  = 0
 
 </script>
 
